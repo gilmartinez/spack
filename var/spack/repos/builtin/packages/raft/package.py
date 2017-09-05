@@ -36,8 +36,8 @@ class Raft(CMakePackage):
     version('1.2.3', '4d1b106d9b3493e63dde96f7dd44b834')
     version('develop', git='https://bitbucket.org/gill_martinez/raft_aps.git')
 
-    depends_on('mpich@3.2')
     depends_on('cmake', type='build')
+    depends_on('mpich@3.2')
     depends_on('hdf5@1.10.1')
     depends_on('fftw')
     depends_on('cuda')
